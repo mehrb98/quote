@@ -7,7 +7,7 @@ export async function getQuote(): Promise<IQuote> {
    const api = await quoteApi();
 
    const quote: IQuote = await api
-      .url("random?category=dev")
+      .url("jokes/random?category=dev")
       .get()
       .json();
 
